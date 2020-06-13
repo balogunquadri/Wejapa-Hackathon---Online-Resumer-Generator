@@ -1,0 +1,9 @@
+{
+  "badProperty": "this should be removed",
+  "selectedTemplate": 1,
+  "basics": {
+    "name": "balogun Quadri",
+    "email": "balogun@gmail.com.com",
+    "website": "github.com/balogunquadri"
+  }
+}
