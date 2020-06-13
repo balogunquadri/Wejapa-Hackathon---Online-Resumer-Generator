@@ -11,6 +11,7 @@ import { ScrollToTop, Loader } from '../common/components'
 import { colors } from '../common/theme'
 import NexaBold from './assets/nexa-bold.otf'
 import NexaLight from './assets/nexa-light.otf'
+import Header from './pages/Header'
 
 injectGlobal`
   * {
@@ -74,6 +75,7 @@ const LoadableError404 = Loadable({
 function App() {
   return (
     <ScrollToTop>
+    <Header />
       <Switch>
         <Route exact path="/" component={LoadableHome} />
         <Route path="/generator" component={LoadableGenerator} />

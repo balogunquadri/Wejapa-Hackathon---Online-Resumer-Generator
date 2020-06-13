@@ -44,6 +44,10 @@ const config = {
         test: /\.(jpg|jpeg|png|gif|ico|svg|pdf|eof)$/,
         use: 'url-loader?limit=15000&name=images/[name].[ext]'
       },
+       {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
       {
         test: /\.eot(\?v=\d+.\d+.\d+)?$/,
         use: 'file-loader?&name=fonts/[name].[ext]'
