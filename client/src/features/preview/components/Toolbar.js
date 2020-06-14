@@ -3,6 +3,10 @@
  */
 
 import React from 'react'
+import Popup from 'reactjs-popup'
+
+import Content from './Popup/Content'
+import './styles.css'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import { Icon } from '../../../common/components'
@@ -42,7 +46,10 @@ const ButtonGroup = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
-    ${props => (props.hideOnMobile ? 'display: none;' : '')} &:first-child,
+    ${props =>
+      props.hideOnMobile
+        ? 'display: none;'
+        : ''} &:first-child,
       last-child {
       justify-content: center;
     }
@@ -142,7 +149,8 @@ type Props = {
   nextPage: () => void,
   zoomIn: () => void,
   zoomOut: () => void,
-  print: (url: string) => void
+  print: (url: string) => void,
+  mail: (url: string) => void
 }
 
 function Toolbar({
@@ -153,6 +161,7 @@ function Toolbar({
   prevPage,
   nextPage,
   print,
+  mail,
   zoomIn,
   zoomOut
 }: Props) {
@@ -187,6 +196,12 @@ function Toolbar({
         </ToolButton>
         <ToolButton onClick={() => print(resumeURL)}>
           <Icon type="print" />
+        </ToolButton>
+        {/* <ToolButton onClick={() => mail(resumeURL)}> */}
+        <ToolButton>
+        <Popup modal trigger={<button>Send as mail</button>}>
+        {close => <Content close={close} />}
+      </Popup>
         </ToolButton>
       </ButtonGroup>
     </Wrapper>

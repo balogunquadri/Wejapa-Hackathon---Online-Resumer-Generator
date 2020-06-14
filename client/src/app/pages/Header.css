@@ -39,7 +39,7 @@
 }
 .header .logo-name {
   font-family: "Agustina Regular";
-  font-weight: bold;
+  font-weight: bold !important;
   padding: 0 10px;
  
 }

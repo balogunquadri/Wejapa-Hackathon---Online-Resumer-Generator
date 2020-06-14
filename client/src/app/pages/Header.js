@@ -18,7 +18,7 @@ function Header() {
           </label>
           <ul className="menu">
             <li>
-              <a href="#skills">Skills</a>
+              <a href="/generator/template">Generator</a>
             </li>
             {/* <li>
               <a href="#achievements">Works</a>

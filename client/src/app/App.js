@@ -13,6 +13,7 @@ import NexaBold from './assets/nexa-bold.otf'
 import NexaLight from './assets/nexa-light.otf'
 import Header from './pages/Header'
 
+
 injectGlobal`
   * {
     box-sizing: border-box;
@@ -81,8 +82,11 @@ function App() {
         <Route path="/generator" component={LoadableGenerator} />
         
         <Route path="*" component={LoadableError404} />
+
       </Switch>
+ 
     </ScrollToTop>
+     
   )
 }
 

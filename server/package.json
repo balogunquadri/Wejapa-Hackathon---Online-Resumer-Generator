@@ -1,13 +1,39 @@
 {
-  "name": "favresume-server",
-  "description": "The server side source for favresume.",
-  "version": "0.1.0",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-   
+  "name": "favresue-server",
+  "version": "1.0.0",
+  "description": "test json file",
+  "main": "index.js",
+  "dependencies": {
+    "archiver": "^2.1.0",
+    "common-tags": "^1.4.0",
+    "fs-promise": "^2.0.3",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-combine-routers": "^2.0.1",
+    "koa-helmet": "^3.3.0",
+    "koa-router": "^7.2.1",
+    "koa2-formidable": "^1.0.2",
+    "node-latex": "^2.6.3",
+    "nodemailer": "^6.4.8",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "pretty-latex": "^0.1.0",
+    "sanitize-latex": "^0.1.2"
   },
-  "homepage": "",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "blyss": "^10.1.0",
+    "flow-bin": "^0.61.0",
+    "flow-coverage-report": "^0.4.1",
+    "flow-typed": "^2.2.0",
+    "glow": "^1.1.0",
+    "jest": "^22.0.6",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.9.2",
+    "snazzy": "^7.0.0",
+    "supertest": "^3.0.0"
+  },
   "scripts": {
     "start": "nodemon index.js --exec babel-node",
     "build": "babel src -d lib --copy-files",
@@ -30,34 +56,5 @@
     "testMatch": [
       "**/tests/**/*.js"
     ]
-  },
-  "dependencies": {
-    "archiver": "^2.1.0",
-    "common-tags": "^1.4.0",
-    "fs-promise": "^2.0.3",
-    "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-combine-routers": "^2.0.1",
-    "koa-helmet": "^3.3.0",
-    "koa-router": "^7.2.1",
-    "koa2-formidable": "^1.0.2",
-    "node-latex": "^2.6.3",
-    "pretty-latex": "^0.1.0",
-    "sanitize-latex": "^0.1.2"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0",
-    "blyss": "^10.1.0",
-    "flow-bin": "^0.61.0",
-    "flow-coverage-report": "^0.4.1",
-    "flow-typed": "^2.2.0",
-    "glow": "^1.1.0",
-    "jest": "^22.0.6",
-    "nodemon": "^1.12.1",
-    "prettier": "^1.9.2",
-    "snazzy": "^7.0.0",
-    "supertest": "^3.0.0"
   }
 }

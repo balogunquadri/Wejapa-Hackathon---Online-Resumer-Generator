@@ -15,6 +15,7 @@ import { clearPreview } from '../../features/preview/actions'
 import { hasPrevSession } from '../selectors'
 import { colors } from '../../common/theme'
 import type { State } from '../types'
+import Body from "./Body"
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -59,6 +60,7 @@ const Button = styled(Link)`
   width: 175px;
   height: 45px;
   margin: 7px 0;
+  
   background: transparent;
   color: white;
   border-radius: 100px;
@@ -88,7 +90,7 @@ const Button = styled(Link)`
 `
 
 const PrimaryButton = Button.extend`
-  margin-top: 15px;
+  margin-top: 5px;
   background: linear-gradient(
     40deg,
     ${darken(0.3, colors.primary)},
@@ -112,8 +114,8 @@ const Input = styled.input`
 
 const ResumePreview = styled.div`
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
 
   @media screen and (max-width: 850px) {
     display: none;
@@ -320,14 +322,15 @@ class Home extends Component<Props> {
             </ResumePreview>
           </RightSection>
         </Main>
+        <Body />
         <Footer>
-          <Copyright>© 2020 </Copyright>
+          <Copyright>© 2020</Copyright>
           <Links>
             <Link to="/about">About</Link>
             <a href="">Source</a>
-            <a href="">Issues</a>
-            <a href="">Contact</a>
-            <a href="">Donate</a>
+            <a href="">Report a Bug</a>
+            <a href="mailto:hi@favcode54.org">Contact</a>
+           
           </Links>
         </Footer>
       </Wrapper>
