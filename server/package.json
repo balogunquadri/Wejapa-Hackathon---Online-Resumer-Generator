@@ -14,7 +14,7 @@
     "koa-router": "^7.2.1",
     "koa2-formidable": "^1.0.2",
     "node-latex": "^2.6.3",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "pretty-latex": "^0.1.0",
     "sanitize-latex": "^0.1.2"
